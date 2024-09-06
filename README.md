@@ -6,6 +6,7 @@ This repository contains the research project completed for the course CS-451: C
 
 * Python
 * Numpy
+* Pydub
 
 ## Problem Introduction
 
@@ -31,15 +32,15 @@ The _italicized_ terms are configurable by the user during runtime.
 Navigate to the base folder and run the main script with the required parameters:
 
 ```sh
-python EA/main.py p1 p2 ... p8
+python EA/main.py p1 p2 ... p7
 ```
 
-For a complete list of parameters and their values, refer to [Parameters](#parameters).
+For a complete list of parameters and their values, refer to [Parameters](#parameters). Another input parameter that the user can provide in code is a pair of 'bols' identified as good pairs, a term referenced and explained in our [paper](www.google.com). The input can be provided by editing configured values in `EA/main.py`.
 
 ### Example
 
 ```sh
-python EA/main.py ts_4 tr 30 10 50 0.5 10 16
+python EA/main.py ts_4 tr 30 10 50 0.5 10 
 ```
 
 ## Parameters
@@ -51,23 +52,16 @@ python EA/main.py ts_4 tr 30 10 50 0.5 10 16
 5. **Generations Number**: Number of generations the algorithm will run, which is also the termination criterion.
 6. **Mutation Rate**: The probability that each offspring will undergo mutation.
 7. **Iterations**: Number of iterations of the entire process to generate multiple samples for averaging.
-8. **Length of Tabla Composition**: Length of the tabla composition to be evolved.
-
-## Auxiliary Files
-
-* **graph.py**: Used to create graphs from the output data.
-* **main_csv.py**: Used to generate datasets for analysis.
 
 ## Data
 
-The `Bols` folder contains all the input data of bols used for generating tabla compositions.
+The `Data` folder contains all the input data of bols used for generating tabla compositions.
 
 ## Selection Schemes
 
 The following selection schemes are implemented and can be specified using their abbreviations:
 
 * **Random**: rn
-* **Tournament**: ts_*size*, where *size* specifies the size of the tournament.
 * **Rank Based Selection**: rbs
 * **Fitness Proportion Selection**: fps
 * **Truncation**: tr
