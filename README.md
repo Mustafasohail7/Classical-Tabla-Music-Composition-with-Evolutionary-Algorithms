@@ -68,7 +68,7 @@ The following selection schemes are implemented and can be specified using their
 
 ## Authors
 
-* [Azeem Haider](https://github.com/A-Haider13)
+* [Azeem Haider](https://github.com/muhammadazeemhaider)
 * [Ali Siddiqui](https://github.com/AliSid10)
 * [Mustafa Sohail](https://github.com/Mustafasohail7)
 
